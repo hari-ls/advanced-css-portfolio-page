@@ -1,0 +1,143 @@
+:root {
+  --light: #ededf6;
+  --dark: #455777;
+  --highlight: #91cbcd;
+}
+body {
+  background: var(--light);
+  color: var(--dark);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  position: fixed;
+  width: 100%;
+  background: var(--light);
+  z-index: 1;
+}
+nav {
+  margin: 0 20px 0 0;
+}
+nav ul li {
+  padding: 10px;
+  font-size: 1.6em;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  border-bottom: 3px solid var(--dark);
+  margin: 0px 10px;
+}
+nav ul li:hover {
+  border-bottom: 3px solid var(--highlight);
+}
+li {
+  display: inline-block;
+}
+li a {
+  color: var(--dark);
+  text-decoration: none;
+}
+li a:hover {
+  color: var(--highlight);
+}
+h1 {
+  font-size: 300%;
+}
+h2 {
+  font-size: 300%;
+  position: sticky;
+  top: 80px;
+}
+h3.subtitle {
+  padding: 20px;
+  background: var(--highlight);
+  color: var(--dark);
+  margin-bottom: 20px;
+  font-size: 200%;
+}
+p {
+  font-size: 16px;
+  line-height: 1.3em;
+  padding: 10px 20px;
+}
+
+.identity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
+  background: var(--highlight);
+  color: var(--dark);
+}
+.profile-img {
+  width: 60px;
+  clip-path: circle();
+}
+.hero {
+  background: url(../../assets/images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  height: 400px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.container {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.inner-left {
+  flex: 0 0 20%;
+  padding: 20px;
+  margin: 10px 0px;
+  border-right: 5px solid var(--dark);
+  text-align: right;
+}
+.inner-right {
+  flex: 0 0 80%;
+  padding: 20px;
+  margin: 10px 0px;
+}
+.samples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px 0;
+}
+.samples > div:first-of-type {
+  flex: 0 0 100%;
+}
+.sample-item {
+  flex: 0 0 50%;
+}
+.item-content {
+  height: 300px;
+  margin: 0 10px;
+  background: var(--dark);
+  color: var(--light);
+  padding: 10px;
+  height: 300px;
+  border: 5px solid var(--highlight);
+}
+#contact .inner-right ul {
+  display: flex;
+  padding: 0 20px;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+#contact ul li a {
+  font-size: 1.5em;
+  padding: 0 5px 5px 5px;
+  border-bottom: 4px solid var(--dark);
+}
