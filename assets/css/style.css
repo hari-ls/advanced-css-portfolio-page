@@ -50,11 +50,7 @@ h2 {
   position: sticky;
   top: 80px;
 }
-h3.subtitle {
-  padding: 20px;
-  background: var(--highlight);
-  color: var(--dark);
-  margin-bottom: 20px;
+h3 {
   font-size: 200%;
 }
 p {
@@ -77,7 +73,7 @@ p {
   clip-path: circle();
 }
 .hero {
-  background: url(../../assets/images/banner.jpg);
+  background: url(../../assets/images/hero-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -89,6 +85,13 @@ p {
   height: 400px;
   justify-content: flex-end;
   align-items: flex-end;
+}
+.subtitle {
+  padding: 20px;
+  background: var(--highlight);
+  color: var(--dark);
+  margin-bottom: 20px;
+  font-size: 200%;
 }
 .container {
   display: flex;
@@ -113,20 +116,68 @@ p {
   justify-content: space-between;
   gap: 20px 0;
 }
-.samples > div:first-of-type {
-  flex: 0 0 100%;
-}
 .sample-item {
   flex: 0 0 50%;
 }
+.samples > div:first-of-type {
+  flex: 0 0 100%;
+}
 .item-content {
+  display: flex;
+  align-items: flex-end;
   height: 300px;
   margin: 0 10px;
   background: var(--dark);
   color: var(--light);
-  padding: 10px;
   height: 300px;
   border: 5px solid var(--highlight);
+}
+.samples > div:nth-of-type(1) .item-content {
+  background: url(../../assets/images/surf-report-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+.samples > div:nth-of-type(2) .item-content {
+  background: url(../../assets/images/led-wall-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.samples > div:nth-of-type(3) .item-content {
+  background: url(../../assets/images/calculator-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.samples > div:nth-of-type(4) .item-content {
+  background: url(../../assets/images/pastel-puzzle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.samples > div:nth-of-type(5) .item-content {
+  background: url(../../assets/images/run-buddy-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item-info {
+  display: flex;
+  background: var(--highlight);
+  color: var(--dark);
+  flex-direction: column;
+  position: relative;
+  bottom: 40px;
+  padding: 10px;
+}
+.item-name {
+  display: block;
+}
+.item-desc {
+  display: block;
+  padding: 0;
 }
 #contact .inner-right ul {
   display: flex;
