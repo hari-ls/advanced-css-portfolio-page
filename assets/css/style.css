@@ -1,6 +1,7 @@
 :root {
   --light: #ededf6;
   --dark: #455777;
+  --darker: #31343d;
   --highlight: #91cbcd;
 }
 body {
@@ -12,13 +13,13 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
-  position: fixed;
-  width: 100%;
-  background: var(--light);
+  /* position: fixed; */
+  /* width: 100vw; */
+  background: var(--darker);
   z-index: 1;
 }
 nav {
-  margin: 0 20px 0 0;
+  margin: 0 40px 0 0;
 }
 nav ul li {
   padding: 10px;
@@ -26,7 +27,7 @@ nav ul li {
   font-weight: 600;
   text-transform: capitalize;
   letter-spacing: 1px;
-  border-bottom: 3px solid var(--dark);
+  border-bottom: 3px solid var(--highlight);
   margin: 0px 10px;
 }
 nav ul li:hover {
@@ -36,7 +37,7 @@ li {
   display: inline-block;
 }
 li a {
-  color: var(--dark);
+  color: var(--highlight);
   text-decoration: none;
 }
 li a:hover {
@@ -47,8 +48,6 @@ h1 {
 }
 h2 {
   font-size: 300%;
-  position: sticky;
-  top: 80px;
 }
 h3 {
   font-size: 200%;
@@ -64,7 +63,7 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 0 20px;
+  padding: 0 20px 0 40px;
   background: var(--highlight);
   color: var(--dark);
 }
@@ -79,7 +78,7 @@ p {
   background-size: cover;
 }
 .hero-inner {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   display: flex;
   height: 400px;
@@ -91,11 +90,12 @@ p {
   background: var(--highlight);
   color: var(--dark);
   margin-bottom: 20px;
+  margin-right: 40px;
   font-size: 200%;
 }
 .container {
   display: flex;
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
 }
 .inner-left {
@@ -109,6 +109,10 @@ p {
   flex: 0 0 80%;
   padding: 20px;
   margin: 10px 0px;
+}
+.inner-left h2 {
+  position: sticky;
+  top: 10px;
 }
 .samples {
   display: flex;
@@ -190,5 +194,42 @@ p {
 #contact ul li a {
   font-size: 1.5em;
   padding: 0 5px 5px 5px;
+  color: var(--dark);
   border-bottom: 4px solid var(--dark);
+}
+
+@media screen and (max-width: 1120px) {
+  .hero-inner {
+    justify-content: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .inner-left {
+    flex: 0 0 100%;
+    padding: 10px 0;
+    margin: 10px 40px;
+    border-right: none;
+    border-bottom: 5px solid var(--dark);
+    text-align: left;
+  }
+  .item-content {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .sample-item {
+    flex: 0 0 100%;
+  }
+  #contact .inner-right ul {
+    flex-wrap: wrap;
+  }
 }
