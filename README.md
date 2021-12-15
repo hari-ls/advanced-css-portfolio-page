@@ -9,9 +9,20 @@ Refactoring the code of a webpage for a marketing agency to improve overall acce
 - This portfolio site uses sementic HTML and advanced CSS3 to create and style the layout of the web page.
 - Creating this portfolio site helped understand the advanced concept of CSS3 like pseudo classses, transitions and media queries to create a responsive and interactive web page.
 
-### Screenshot
+### Screenshots
 
-![Screenshot of the web page](/assets/images/screenshot.png)
+#### Large
+
+![Screenshot of the web page](/assets/images/screencapture-l.png)
+
+#### Medium (less than 992px)
+
+![Screenshot of the web page](/assets/images/screencapture-m.png)
+
+#### Small (less than 768px)
+
+![Screenshot of the web page](/assets/images/screencapture-s.png)
+
 
 ## Review
 
