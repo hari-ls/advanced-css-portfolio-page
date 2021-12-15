@@ -56,6 +56,7 @@ nav ul li a {
   letter-spacing: 1px;
   border-bottom: 3px solid var(--highlight);
   padding: 5px 10px;
+  line-height: 1.8em;
 }
 nav ul li:hover > a {
   border-bottom: 3px solid var(--highlight);
